@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">Three card poker</string>
+    <string name="game_zp">Wheel of Fortune</string>
+    <string name="game_choose_game">Select game</string>
+    <string name="game_wait_start">Starting soon, please wait</string>
+    <string name="game_charge">Recharge</string>
+    <string name="game_win">Won</string>
+    <string name="game_wait_end">Please wait for the game to end</string>
+    <string name="game_wan">W</string>
+    <string name="game_zjh_role_name_1">DaQiaox2</string>
+    <string name="game_zjh_role_name_2">DiaoChanx2</string>
+    <string name="game_zjh_role_name_3">XiaoQiaox2</string>
+    <string name="game_start_support">Start supporting</string>
+    <string name="game_show_result">Reveal the result</string>
+    <string name="game_lose_tip">Victory or defeat is standard issue</string>
+</resources>

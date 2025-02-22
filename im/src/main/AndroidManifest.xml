@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yunbao.im">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name="com.yunbao.im.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".activity.ImMsgNotifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.yunbao.im.activity.SystemMessageActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ChatRoomActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.LocationActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ChatChooseImageActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ImMsgAtActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ImMsgLikeActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ImMsgCommentActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.yunbao.im.activity.ImMsgConcatActivity"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+</manifest>

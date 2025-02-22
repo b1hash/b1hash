@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">智勇三张</string>
+    <string name="game_zp">幸运转盘</string>
+    <string name="game_choose_game">选择游戏</string>
+    <string name="game_wait_start">即将开始，请稍后...</string>
+    <string name="game_charge">充值</string>
+    <string name="game_win">赢了哦</string>
+    <string name="game_wait_end">请等待游戏结束</string>
+    <string name="game_wan">万</string>
+    <string name="game_zjh_role_name_1">大乔x2</string>
+    <string name="game_zjh_role_name_2">貂蝉x2</string>
+    <string name="game_zjh_role_name_3">小乔x2</string>
+    <string name="game_start_support">开始支持</string>
+    <string name="game_show_result">揭晓结果</string>
+    <string name="game_lose_tip">胜败乃兵家常事</string>
+</resources>

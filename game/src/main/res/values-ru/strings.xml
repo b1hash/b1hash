@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">Три карты мудрости и храбрости</string>
+    <string name="game_zp">Колесо фортуны</string>
+    <string name="game_choose_game">Выберите игру</string>
+    <string name="game_wait_start">Скоро начнется, подождите немного...</string>
+    <string name="game_charge">Пополнение счета</string>
+    <string name="game_win">Выиграл!</string>
+    <string name="game_wait_end">Пожалуйста, подождите, пока игра не закончится</string>
+    <string name="game_wan">десятки тысяч</string>
+    <string name="game_zjh_role_name_1">Дао Цзяо x2</string>
+    <string name="game_zjh_role_name_2">Дань Чань x2</string>
+    <string name="game_zjh_role_name_3">Сяо Цзяо x2</string>
+    <string name="game_start_support">Начать поддержку</string>
+    <string name="game_show_result">Объявить результат</string>
+    <string name="game_lose_tip">Победы и поражения — обычное дело для воинов</string>
+</resources>

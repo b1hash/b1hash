@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"
+        android:textSize="15sp"
+        tools:text="1"
+        tools:textColor="@color/textColor" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        tools:src="@mipmap/ic_avatar_test" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
+            tools:text="啊啊啊啊" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/group_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                tools:background="@drawable/bg_live_user_sex_1">
+
+                <ImageView
+                    android:id="@+id/img_sex"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    tools:src="@mipmap/icon_live_user_sex_1" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    tools:text="20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:background="@drawable/bg_live_user_city">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_live_user_city" />
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxWidth="60dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    tools:text="啊啊啊啊" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/consume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textColor="#FF3030"
+        android:textSize="15sp"
+        tools:text="100映票" />
+</LinearLayout>

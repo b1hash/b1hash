@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabButton">
+        <attr name="tbn_icon_array_id" format="reference" />
+        <attr name="tbn_tip" format="string" />
+        <attr name="tbn_icon_size" format="dimension" />
+        <attr name="tbn_text_size" format="dimension" />
+        <attr name="tbn_text_color_checked" format="color" />
+        <attr name="tbn_text_color_unchecked" format="color" />
+        <attr name="tbn_checked" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CommonRefreshView">
+        <attr name="crv_refreshEnable" format="boolean" />
+        <attr name="crv_loadMoreEnable" format="boolean" />
+        <attr name="crv_emptyEnable" format="boolean" />
+        <attr name="crv_layout" format="reference" />
+        <attr name="crv_itemCount" format="integer" />
+        <attr name="crv_textColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MyViewPager">
+        <attr name="canScroll" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="ri_ratio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="DrawableTextView">
+        <attr name="dt_top_width" format="dimension" />
+        <attr name="dt_top_height" format="dimension" />
+        <attr name="dt_left_width" format="dimension" />
+        <attr name="dt_left_height" format="dimension" />
+        <attr name="dt_right_width" format="dimension" />
+        <attr name="dt_right_height" format="dimension" />
+        <attr name="dt_bottom_width" format="dimension" />
+        <attr name="dt_bottom_height" format="dimension" />
+        <attr name="dt_top_drawable" format="reference" />
+        <attr name="dt_left_drawable" format="reference" />
+        <attr name="dt_right_drawable" format="reference" />
+        <attr name="dt_bottom_drawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout2">
+        <attr name="mll_span_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MyFrameLayout2">
+        <attr name="mfl_ratio" format="float" />
+        <attr name="mfl_offestY" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout6">
+        <attr name="mll_ratio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MyRelativeLayout2">
+        <attr name="mrl_ratio" format="float" />
+        <attr name="mrl_scaleX" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout3">
+        <attr name="mll_height_percent" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout4">
+        <attr name="mll4_count" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="cp_stroke_width" format="dimension" />
+        <attr name="cp_bg_color" format="color" />
+        <attr name="cp_fg_color" format="color" />
+        <attr name="cp_max_progress" format="float" />
+        <attr name="cp_cur_progress" format="float" />
+    </declare-styleable>
+    <declare-styleable name="LineProgress">
+        <attr name="lp_fg_color" format="color" />
+        <attr name="lp_bg_color" format="color" />
+        <attr name="lp_max_progress" format="integer" />
+        <attr name="lp_cur_progress" format="integer" />
+        <attr name="lp_strokeWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="NineGridLayout">
+        <attr name="ngl_space" format="dimension" />
+        <attr name="ngl_divider_width" format="dimension" />
+        <attr name="ngl_corner_radius" format="dimension" />
+        <attr name="ngl_item_width" format="dimension" />
+        <attr name="ngl_play_icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CoinGiveLayout">
+        <attr name="cgl_bg_color" format="color" />
+        <attr name="cgl_radius" format="dimension" />
+        <attr name="cgl_arrow_width" format="dimension" />
+        <attr name="cgl_arrow_height" format="dimension" />
+        <attr name="cgl_arrow_offset_x" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+        <attr name="rtb_star_count" format="integer"/>
+        <attr name="rtb_fill_count" format="integer"/>
+        <attr name="rtb_star_width" format="dimension"/>
+        <attr name="rtb_star_height" format="dimension"/>
+        <attr name="rtb_star_space" format="dimension"/>
+        <attr name="rtb_fill_drawable" format="reference"/>
+        <attr name="rtb_normal_drawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="StarCountView">
+        <attr name="scv_check_drawable" format="reference"/>
+        <attr name="scv_uncheck_drawable" format="reference"/>
+        <attr name="scv_drawable_size" format="dimension"/>
+        <attr name="scv_total_count" format="integer"/>
+        <attr name="scv_fill_count" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="BubbleLayout">
+        <attr name="bubbleBgColor" format="color"/>
+        <attr name="bubbleRadius" format="dimension"/>
+        <attr name="arrowWidth" format="dimension"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowPositionY" format="dimension"/>
+        <attr name="arrowDirecrion" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SideIndexBar">
+        <attr name="sib_check_text_color" format="color"/>
+        <attr name="sib_uncheck_text_color" format="color"/>
+        <attr name="sib_text_size" format="dimension"/>
+        <attr name="sib_text_space" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="TextSeekBar">
+        <attr name="text2" format="string"/>
+        <attr name="progressVal" format="integer"/>
+        <attr name="progressVal_max" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="mrv_max_height" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 密码 验证码输入框-->
+    <declare-styleable name="SplitEditText">
+        <!--边框大小-->
+        <attr name="borderSize" format="dimension" />
+        <!--边框颜色-->
+        <attr name="borderColor" format="color|reference" />
+        <!--圆角大小-->
+        <attr name="corner_size" format="dimension" />
+        <!--分割线大小-->
+        <attr name="divisionLineSize" format="dimension" />
+        <!--分割线颜色-->
+        <attr name="divisionLineColor" format="reference|color" />
+        <!--内容显示为圆的半径-->
+        <attr name="circleRadius" format="dimension" />
+        <!--输入内容数量-->
+        <attr name="contentNumber" format="integer" />
+        <!--输入内容显示样式-->
+        <attr name="contentShowMode" format="enum">
+            <!--显示成密码圆-->
+            <enum name="password" value="1" />
+            <!--显示成文本-->
+            <enum name="text" value="2" />
+        </attr>
+        <!--单个输入框和下划线样式下,每个输入框之间的间距-->
+        <attr name="spaceSize" format="dimension" />
+        <!--输入框样式-->
+        <attr name="inputBoxStyle" format="enum">
+            <!--输入框整体相连的样式-->
+            <enum name="connectBox" value="1" />
+            <!--单个输入框样式-->
+            <enum name="singleBox" value="2" />
+            <!--下划线样式-->
+            <enum name="underline" value="3" />
+        </attr>
+        <!--密码字体颜色-->
+        <attr name="android:textColor" />
+        <!--密码字体大小-->
+        <attr name="android:textSize" />
+        <!--输入框是否是正方形-->
+        <attr name="inputBoxSquare" format="boolean" />
+        <!--光标宽度-->
+        <attr name="cursorWidth" format="dimension" />
+        <!--光标高度-->
+        <attr name="cursorHeight" format="dimension" />
+        <!--光标颜色-->
+        <attr name="cursorColor" format="color|reference" />
+        <!--光标闪烁时长-->
+        <attr name="cursorDuration" format="integer" />
+        <!--下划线输入框样式下,下划线正常的颜色-->
+        <attr name="underlineNormalColor" format="reference|color" />
+        <!--下划线输入框样式下,下划线获取焦点时颜色-->
+        <attr name="underlineFocusColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearGradientTextView">
+        <attr name="lgt_startColor" format="color" />
+        <attr name="lgt_endColor" format="color" />
+        <attr name="lgt_textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Banner2">
+        <attr name="banner_loop_time" format="integer" />
+        <attr name="banner_auto_loop" format="boolean" />
+        <attr name="banner_infinite_loop" format="boolean" />
+
+        <!--RoundLinesIndicator、RectangleIndicator-->
+        <attr name="banner_indicator_height" format="dimension" />
+        <attr name="banner_indicator_radius" format="dimension" />
+
+        <!-- 以下为公用属性 -->
+        <attr name="banner_indicator_selected_width" format="dimension" />
+        <!--CircleIndicator-->
+        <attr name="banner_indicator_normal_width" format="dimension" />
+        <attr name="banner_indicator_space" format="dimension" />
+
+        <attr name="banner_indicator_normal_color" format="reference|color" />
+        <attr name="banner_indicator_selected_color" format="reference|color" />
+        <attr name="banner_indicator_margin" format="dimension" />
+        <attr name="banner_indicator_marginLeft" format="dimension" />
+        <attr name="banner_indicator_marginTop" format="dimension" />
+        <attr name="banner_indicator_marginRight" format="dimension" />
+        <attr name="banner_indicator_marginBottom" format="dimension" />
+
+        <attr name="banner_indicator_gravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="banner_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="banner_radius" format="dimension" />
+
+        <!--设置需要圆角的方向，不设置默认全部设置-->
+        <attr name="banner_round_top_left" format="boolean" />
+        <attr name="banner_round_top_right" format="boolean" />
+        <attr name="banner_round_bottom_left" format="boolean" />
+        <attr name="banner_round_bottom_right" format="boolean" />
+
+    </declare-styleable>
+    <declare-styleable name="DrawableIndicator">
+        <attr name="normal_drawable" format="reference" />
+        <attr name="selected_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DashLineView">
+        <attr name="dl_color" format="color" />
+        <attr name="dl_stroke_width" format="dimension" />
+        <attr name="dl_dash_width" format="dimension" />
+        <attr name="dl_dash_gap" format="dimension" />
+    </declare-styleable>
+</resources>

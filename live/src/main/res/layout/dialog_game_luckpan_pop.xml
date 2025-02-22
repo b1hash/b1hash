@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignTop="@id/btn_more"
+                android:layout_alignBottom="@id/btn_more"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#d9ffffff" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/game_luckpan_08" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/game_luckpan_pop"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_rule_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/玩法介绍"
+                android:textColor="@color/textColor"
+                android:textSize="13dp" />
+
+
+            <com.yunbao.common.custom.DashLineView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:dl_color="#FF8648"
+                app:dl_dash_gap="2dp"
+                app:dl_dash_width="4dp"
+                app:dl_stroke_width="2dp" />
+
+            <TextView
+                android:id="@+id/btn_win_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/参与记录"
+                android:textColor="@color/textColor"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+

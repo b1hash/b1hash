@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    tools:ignore="MissingDefaultResource">
+
+
+    <FrameLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/game_luckpan_01"
+            app:riv_corner_radius_top_left="20dp"
+            app:riv_corner_radius_top_right="20dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/bg"
+        android:layout_alignBottom="@id/bg"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/game_luckpan_03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/game_luckpan_02"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/wrap"
+                app:layout_constraintLeft_toLeftOf="@id/wrap"
+                app:layout_constraintRight_toRightOf="@id/wrap"
+                app:layout_constraintTop_toTopOf="@id/wrap">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="93" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="512"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="179" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="485"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img_0"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                            <ImageView
+                                android:id="@+id/img_1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                            <ImageView
+                                android:id="@+id/img_2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img_7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:src="@mipmap/game_luckpan_06" />
+
+                            <ImageView
+                                android:id="@+id/img_3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/img_6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                            <ImageView
+                                android:id="@+id/img_5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+
+                            <ImageView
+                                android:id="@+id/img_4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/game_luckpan_04"
+                                android:padding="10dp"
+                                tools:src="@mipmap/icon_gift_test" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="76">
+
+                        <RelativeLayout
+                            android:id="@+id/btn_skip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:translationY="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_skip"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/game_luckpan_09" />
+
+                            <ImageView
+                                android:id="@+id/img_skip_check"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_centerVertical="true"
+                                android:src="@mipmap/game_luckpan_10"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@id/img_skip"
+                                android:text="@string/跳过动画"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:translationY="-0.5dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="115" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/wrap"
+                app:layout_constraintLeft_toLeftOf="@id/wrap"
+                app:layout_constraintRight_toRightOf="@id/wrap"
+                app:layout_constraintTop_toTopOf="@id/wrap">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="155" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="395"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="77" />
+
+                    <com.yunbao.common.banner.Banner2
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="52"
+                        app:banner_auto_loop="true"
+                        app:banner_infinite_loop="false"
+                        />
+
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="611" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="170" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_rank"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/game_luckpan_07"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/game_luckpan_08"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_rank" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/wrap"
+                app:layout_constraintRight_toRightOf="@id/wrap"
+                app:layout_constraintTop_toBottomOf="@id/wrap">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/btn_get_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/game_luckpan_11" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@id/btn_get_1"
+                        android:layout_alignTop="@id/btn_get_1"
+                        android:layout_alignRight="@id/btn_get_1"
+                        android:layout_alignBottom="@id/btn_get_1"
+                        android:gravity="center"
+                        android:text="@string/单击"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/coin_0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_get_1"
+                        android:layout_alignLeft="@id/btn_get_1"
+                        android:layout_alignRight="@id/btn_get_1"
+                        android:gravity="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11dp"
+                        tools:text="100钻石" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/btn_get_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/game_luckpan_11" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@id/btn_get_10"
+                        android:layout_alignTop="@id/btn_get_10"
+                        android:layout_alignRight="@id/btn_get_10"
+                        android:layout_alignBottom="@id/btn_get_10"
+                        android:gravity="center"
+                        android:text="@string/十连击"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/coin_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_get_10"
+                        android:layout_alignLeft="@id/btn_get_10"
+                        android:layout_alignRight="@id/btn_get_10"
+                        android:gravity="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11dp"
+                        tools:text="1000钻石" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/btn_get_100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/game_luckpan_11" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_alignLeft="@id/btn_get_100"
+                        android:layout_alignTop="@id/btn_get_100"
+                        android:layout_alignRight="@id/btn_get_100"
+                        android:layout_alignBottom="@id/btn_get_100"
+                        android:gravity="center"
+                        android:text="@string/百连击"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/coin_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_get_100"
+                        android:layout_alignLeft="@id/btn_get_100"
+                        android:layout_alignRight="@id/btn_get_100"
+                        android:gravity="center"
+                        android:textColor="@color/textColor"
+                        android:textSize="11dp"
+                        tools:text="10000钻石" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4d000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <LinearLayout
+                android:id="@+id/btn_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/game_star_pack"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/game_xqtb_14"
+                    android:translationY="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/live_send_gift_4"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/btn_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#33ffffff"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    tools:text="9999999" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_live_gift_zs" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/game_xqtb_15" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1dp"
+        app:riv_oval="true"
+        tools:src="@mipmap/ic_avatar_test" />
+
+    <TextView
+        android:id="@+id/img_position"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="3dp"
+        tools:background="@drawable/bg_live_voice_gift_1"
+        android:gravity="center"
+        android:minWidth="26dp"
+        android:textSize="9dp"
+        tools:text="全麦"
+        tools:textColor="@color/white" />
+</FrameLayout>

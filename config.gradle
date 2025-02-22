@@ -1,0 +1,58 @@
+ext {
+    android = [
+            compileSdkVersion: 31,
+            buildToolsVersion: "30.0.2",
+            minSdkVersion    : 23,
+            targetSdkVersion : 31,
+            versionCode      : 203,
+            versionName      : "8.0.8"
+    ]
+
+    manifestPlaceholders = [
+            serverHost       : "http://154.82.73.4",
+
+            //腾讯IM appId
+            TxIMAppId        : "140067",
+            //腾讯tpns推送
+            XG_ACCESS_ID     : "1580020211",
+            XG_ACCESS_KEY    : "ASLPFN68SNNA",
+            //tpns推送接入点的域名
+            XG_SERVER_SUFFIX : "tpns.sh.tencent.com",
+            //广州：tpns.tencent.com
+            //上海：tpns.sh.tencent.com
+            //新加坡：tpns.sgp.tencent.com
+            //中国香港：tpns.hk.tencent.com
+
+            //腾讯地图，用于定位，地图，逆地址解析
+            txMapAppKey      : "GPIBZ-Y2FWX-4RMJ",
+            txMapAppSecret   : "wvdMRbPT37Xtc5",
+
+            //腾讯bugly
+            buglyAppId       : "08c33",
+
+            //百度语音识别
+            baiduAppId       : "2615",
+            baiduAppKey      : "wHwXNtW26hU",
+            baiduAppSecretKey: "Bky1IR1skRGLTHR",
+
+            //友盟统计
+            umengAppKey      : "5bff3b1e",
+
+            //openinstall，app带参数安装,用于建立上下级邀请关系
+            openinstallAppKey: "po5",
+
+            //Mob登录分享服务
+            MobAppKey        : "2ad",
+            MobAppSecret     : "e57996c8f3edb54b",
+
+            //QQ互联，QQ登录分享
+            QQAppId          : "10122",
+            QQAppKey         : "075999fa87f51e73b80",
+
+            //微信开放平台，微信登录分享支付
+            WxAppId          : "wxe1d29ca4",
+            WxAppSecret      : "c208e5e91104",
+
+    ]
+
+}

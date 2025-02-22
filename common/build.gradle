@@ -1,0 +1,144 @@
+apply plugin: 'com.android.library'
+apply from: '../Mob.gradle'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["androidx"]
+    api rootProject.ext.dependencies["recyclerview"]
+    api rootProject.ext.dependencies["cardview"]
+    api rootProject.ext.dependencies["coordinatorlayout"]
+    api rootProject.ext.dependencies["material"]
+    api rootProject.ext.dependencies["multidex"]
+    api "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    api files('../libs/commons-io-1.4.jar')
+    api files('libs/open_sdk_r6019_lite.jar')
+    //    //okHttp网络请求
+    api rootProject.ext.dependencies["okhttp"]
+
+    //fastJson解析json
+    api rootProject.ext.dependencies["fastjson"]
+
+    //eventbus事件总线
+    api rootProject.ext.dependencies["eventbus"]
+
+    //使用Glide加载图片
+    api rootProject.ext.dependencies["glide"]
+
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    api rootProject.ext.dependencies["glide-transformations"]
+
+    //带圆角，边框的的ImageView
+    api rootProject.ext.dependencies["roundedimageview"]
+
+    //gif库，播放礼物gif用
+    api rootProject.ext.dependencies["gif-drawable"]
+
+    //svga播放器
+    api rootProject.ext.dependencies["SVGAPlayer"]
+
+    //七牛云存储
+    api (rootProject.ext.dependencies["qiniu-sdk"]){
+        exclude (group: 'com.squareup.okhttp3', module: 'okhttp')
+    }
+
+    //微信sdk,支付登录分享
+    api rootProject.ext.dependencies["tencent-wechat-sdk"]
+    //腾讯bugly
+    api rootProject.ext.dependencies["tencent-bugly"]
+
+    //友盟统计
+    api 'com.umeng.umsdk:common:9.5.4'// (必选)
+    api 'com.umeng.umsdk:asms:1.6.3'// 必选
+    api 'com.umeng.umsdk:apm:1.8.0'// U-APM产品包依赖(必选)
+
+
+    //图片裁剪
+    api rootProject.ext.dependencies["ucrop"]
+
+    //支付宝sdk
+    api files('libs/alipaySdk-20180601.jar')
+
+    //腾讯定位，地图sdk
+    api files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    api 'com.tencent.map:tencent-map-vector-sdk:4.2.8'
+
+    //下拉刷新上拉加载
+    api 'io.github.scwang90:refresh-layout-kernel:2.0.5'
+    api 'io.github.scwang90:refresh-header-classics:2.0.5'
+    api 'io.github.scwang90:refresh-footer-classics:2.0.5'
+
+    //ViewPager指示器
+    api rootProject.ext.dependencies["magicIndicator"]
+
+    //腾讯直播sdk
+    api(name: 'LiteAVSDK_Professional_10.9.0.13102', ext: 'aar')
+
+    //轮播图
+    api rootProject.ext.dependencies["banner"]
+
+    //鲁班
+    api rootProject.ext.dependencies["Luban"]
+
+    //一个Picker控件，选择日期，城市用
+    api files('libs/AndroidPicker-1.5.6.jar')
+
+    api 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //亚马逊存储
+    api 'com.amazonaws:aws-android-sdk-s3:2.52.1'
+    api 'com.amazonaws:aws-android-sdk-cognito:2.18.0'
+    api 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.52.1'
+
+    //braintree paypal
+    api 'com.braintreepayments.api:drop-in:6.0.0'
+
+    //OpenInstall
+    api files('libs/OpenInstall_v2.7.0.jar')
+
+    //滚轮选择器
+    api 'com.github.zyyoona7:wheelview:1.0.7'
+    api 'com.github.zyyoona7:pickerview:1.0.9'
+
+    api 'com.github.kittinunf.fuel:fuel:2.3.1'
+    api 'com.github.kittinunf.fuel:fuel-android:2.3.1'
+
+    api 'com.github.getActivity:ToastUtils:10.3'
+
+    //图片加载
+    api 'io.coil-kt:coil:2.1.0'
+    api 'io.coil-kt:coil-gif:2.1.0'
+    api 'io.coil-kt:coil-svg:2.1.0'
+    api 'io.coil-kt:coil-video:2.1.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+}

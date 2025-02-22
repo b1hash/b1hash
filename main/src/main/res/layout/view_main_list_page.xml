@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@mipmap/bg_list">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_day"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:background="@drawable/bg_list_btn"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/main_list_day"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btn_week"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_list_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_list_week"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btn_month"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_list_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_list_month"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btn_total"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_list_btn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_list_all"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMoreWhenContentNotFull="true"
+        app:srlEnableOverScrollBounce="false"
+        app:srlEnableOverScrollDrag="false">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/white"
+            app:srlFinishDuration="0"
+            app:srlTextFailed="@string/refresh_header_failed"
+            app:srlTextFinish="@string/refresh_header_finish"
+            app:srlTextLoading="@string/refresh_header_loading"
+            app:srlTextPulling="@string/refresh_header_pulling"
+            app:srlTextRefreshing="@string/refresh_header_refreshing"
+            app:srlTextRelease="@string/refresh_header_release"
+            app:srlTextUpdate="@string/refresh_header_update" />
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fadingEdge="none"
+                app:elevation="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll"
+                    tools:background="#0f0">
+
+                    <Space
+                        android:id="@+id/space"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="250dp" />
+
+                    <ImageView
+                        android:id="@+id/img_123"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/space"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/bg_list_rank" />
+
+                    <FrameLayout
+                        android:id="@+id/item_1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/space"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="90dp">
+
+                        <RelativeLayout
+                            android:id="@+id/data_group_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/avatar_1"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="4dp"
+                                android:scaleType="centerCrop"
+                                app:riv_oval="true"
+                                tools:src="@mipmap/ic_avatar_test" />
+
+                            <ImageView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/icon_main_list_head_1"
+                                android:translationY="-4dp" />
+
+
+                            <TextView
+                                android:id="@+id/name_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/avatar_1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                tools:text="啊啊啊啊" />
+
+                            <TextView
+                                android:id="@+id/votes_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/name_1"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                tools:text="999999" />
+
+                            <com.yunbao.common.custom.MyRadioButton
+                                android:id="@+id/btn_follow_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/votes_1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/bg_btn_follow_2"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:minWidth="44dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/fg_btn_follow_2"
+                                android:textSize="11dp"
+                                tools:text="关注" />
+                        </RelativeLayout>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item_2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/space"
+                        android:layout_marginRight="-15dp"
+                        android:layout_marginBottom="65dp"
+                        android:layout_toLeftOf="@id/item_1">
+
+                        <RelativeLayout
+                            android:id="@+id/data_group_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/avatar_2"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="11dp"
+                                android:scaleType="centerCrop"
+                                app:riv_oval="true"
+                                tools:src="@mipmap/ic_avatar_test" />
+
+                            <ImageView
+                                android:layout_width="84dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/icon_main_list_head_2"
+                                android:translationY="-6dp" />
+
+                            <TextView
+                                android:id="@+id/name_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/avatar_2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                tools:text="啊啊啊啊啊" />
+
+                            <TextView
+                                android:id="@+id/votes_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/name_2"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                tools:text="9999999" />
+
+                            <com.yunbao.common.custom.MyRadioButton
+                                android:id="@+id/btn_follow_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/votes_2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/bg_btn_follow_2"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:minWidth="44dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/fg_btn_follow_2"
+                                android:textSize="11dp"
+                                tools:text="关注" />
+                        </RelativeLayout>
+
+                        <!--<LinearLayout
+                            android:id="@+id/no_data_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible"
+                            tools:visibility="invisible">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:layout_marginTop="11dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/icon_main_list_no_data"
+                                app:riv_oval="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/main_list_no_data_2"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>-->
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/item_3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/space"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginBottom="45dp"
+                        android:layout_toRightOf="@id/item_1">
+
+                        <RelativeLayout
+                            android:id="@+id/data_group_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/avatar_3"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="11dp"
+                                android:scaleType="centerCrop"
+                                app:riv_oval="true"
+                                tools:src="@mipmap/ic_avatar_test" />
+
+                            <ImageView
+                                android:layout_width="84dp"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:src="@mipmap/icon_main_list_head_3"
+                                android:translationY="-6dp" />
+
+
+                            <TextView
+                                android:id="@+id/name_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/avatar_3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                tools:text="啊啊啊啊啊" />
+
+                            <TextView
+                                android:id="@+id/votes_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/name_3"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                tools:text="9999999" />
+
+                            <com.yunbao.common.custom.MyRadioButton
+                                android:id="@+id/btn_follow_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/votes_3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="3dp"
+                                android:background="@drawable/bg_btn_follow_2"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:minWidth="44dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/fg_btn_follow_2"
+                                android:textSize="11dp"
+                                tools:text="关注" />
+                        </RelativeLayout>
+
+                        <!--<LinearLayout
+                            android:id="@+id/no_data_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="invisible"
+                            tools:visibility="invisible">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:layout_marginTop="11dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/icon_main_list_no_data"
+                                app:riv_oval="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/main_list_no_data_2"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+
+
+                        </LinearLayout>-->
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_list_1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:translationY="-150dp"
+                    android:id="@+id/no_data_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/main_list_no_data"
+                    android:textColor="#7d7d7d"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

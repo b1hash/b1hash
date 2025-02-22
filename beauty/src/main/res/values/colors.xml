@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mh_global">#ff6131</color>
+    <color name="mh_white">#fff</color>
+    <color name="mh_red">#ff0000</color>
+    <color name="mh_bg_white">#e6ffffff</color>
+    <color name="mh_bg_black">#80000000</color>
+    <color name="mh_gray2">#1affffff</color>
+    <color name="mh_textColor2">#DCDCDC</color>
+    <color name="mh_textColor3">#C8C8C8</color>
+    <color name="mh_textColor4">#FF6C6C6C</color>
+    <color name="mh_textColor5">#DCDCDC</color>
+    <color name="mh_textColor6">@color/mh_white</color>
+
+</resources>

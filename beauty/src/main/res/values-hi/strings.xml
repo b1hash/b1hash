@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="beauty_mh_001">stiker</string>
+    <string name="beauty_mh_002">kosmetologi</string>
+    <string name="beauty_mh_003">efek khusus</string>
+    <string name="beauty_mh_004">Cermin Menyenangkan</string>
+    <string name="beauty_mh_005">Stiker dasar</string>
+    <string name="beauty_mh_006">Sticker Lanjutan</string>
+    <string name="beauty_mh_007">topeng dasar</string>
+    <string name="beauty_mh_008">Topeng Lanjutan</string>
+    <string name="beauty_mh_009">Mengunduh Sticker gagal</string>
+    <string name="beauty_mh_010">kosmetologi</string>
+    <string name="beauty_mh_011">Bentuk tubuh yang indah</string>
+    <string name="beauty_mh_012">Satu klik kecantikan</string>
+    <string name="beauty_mh_013">Lensa penapis</string>
+    <string name="beauty_mh_014">tanda air</string>
+    <string name="beauty_mh_015">tindakan</string>
+    <string name="beauty_mh_016">Pembuat Kecantikan</string>
+    <string name="beauty_mh_no">Gambar asal</string>
+    <string name="beauty_mh_meibai">kulit putih</string>
+    <string name="beauty_mh_mopi">kecantikan kulit</string>
+    <string name="beauty_mh_hongrun">cerah</string>
+    <string name="beauty_mh_liangdu">kecerahan</string>
+    <string name="beauty_mh_dayan">mata besar</string>
+    <string name="beauty_mh_meimao">alis</string>
+    <string name="beauty_mh_yanju">jarak mata</string>
+    <string name="beauty_mh_yanjiao">canthus</string>
+    <string name="beauty_mh_shoulian">pelangsingan wajah</string>
+    <string name="beauty_mh_zuixing">bentuk mulut</string>
+    <string name="beauty_mh_shoubi">penipisan hidung</string>
+    <string name="beauty_mh_xiaba">rahang</string>
+    <string name="beauty_mh_etou">dahi</string>
+    <string name="beauty_mh_changbi">Hidung tiga dimensi</string>
+    <string name="beauty_mh_xuelian">pelangsingan wajah</string>
+    <string name="beauty_mh_kaiyanjiao">Buka matamu</string>
+    <string name="beauty_mh_biaozhun">Standar</string>
+    <string name="beauty_mh_youya">berkelas</string>
+    <string name="beauty_mh_jingzhi">Sangat indah</string>
+    <string name="beauty_mh_keai">imut-imut</string>
+    <string name="beauty_mh_ziran">secara alami</string>
+    <string name="beauty_mh_wanghong">Selebriti internet</string>
+    <string name="beauty_mh_tuosu">bebas dari vulgar</string>
+    <string name="beauty_mh_gaoya">anggun</string>
+    <string name="beauty_mh_filter_no">tidak ada</string>
+    <string name="beauty_mh_filter_langman">percintaan</string>
+    <string name="beauty_mh_filter_qingxin">segar</string>
+    <string name="beauty_mh_filter_weimei">Cantik</string>
+    <string name="beauty_mh_filter_fennen">merah muda dan lembut</string>
+    <string name="beauty_mh_filter_huaijiu">nostalgia</string>
+    <string name="beauty_mh_filter_qingliang">kesejukan</string>
+    <string name="beauty_mh_filter_landiao">warna biru</string>
+    <string name="beauty_mh_filter_rixi">gaya Jepang</string>
+    <string name="beauty_mh_filter_chengshi">Kota</string>
+    <string name="beauty_mh_filter_chulian">cinta pertama</string>
+    <string name="beauty_mh_filter_chuxin">niat awal</string>
+    <string name="beauty_mh_filter_danse">satu warna</string>
+    <string name="beauty_mh_filter_fanchase">Warna kontras</string>
+    <string name="beauty_mh_filter_hupo">amber</string>
+    <string name="beauty_mh_filter_meiwei">lezat</string>
+    <string name="beauty_mh_filter_mitaofen">bubuk persik</string>
+    <string name="beauty_mh_filter_naicha">teh susu</string>
+    <string name="beauty_mh_filter_pailide">Polaroid</string>
+    <string name="beauty_mh_filter_wutuobang">utopia</string>
+    <string name="beauty_mh_filter_xiyou">jeruk bali</string>
+    <string name="beauty_mh_filter_riza">majalah Jepang</string>
+    <string name="beauty_mh_pro_filter_heimao">kucing hitam</string>
+    <string name="beauty_mh_pro_filter_heibai">hitam dan putih</string>
+    <string name="beauty_mh_pro_filter_bulukelin">brooklyn</string>
+    <string name="beauty_mh_pro_filter_pingjing">tenang</string>
+    <string name="beauty_mh_pro_filter_lengku">dingin</string>
+    <string name="beauty_mh_pro_filter_kaiwen">Kevin</string>
+    <string name="beauty_mh_pro_filter_lianai">percintaan</string>
+    <string name="beauty_mh_pro_filter_jianbao">arahan</string>
+
+    <string name="beauty_mh_texiao_linghun">keluar dari tubuh</string>
+    <string name="beauty_mh_texiao_doudong">judder</string>
+    <string name="beauty_mh_texiao_shanbai">berkedip putih</string>
+    <string name="beauty_mh_texiao_maoci">Burr</string>
+    <string name="beauty_mh_texiao_huanjue">halusinasi</string>
+    <string name="beauty_mh_texiao_msk">Mosaik 1</string>
+    <string name="beauty_mh_texiao_msk_yuan">Mosaik 2</string>
+    <string name="beauty_mh_texiao_msk_san">Mosaik 3</string>
+    <string name="beauty_mh_texiao_msk_liu">Mosaik 4</string>
+    <string name="beauty_mh_texiao_action_no">Gambar asli</string>
+    <string name="beauty_mh_texiao_action_head">angkat kepalamu</string>
+    <string name="beauty_mh_texiao_action_mouth">Buka mulutmu</string>
+    <string name="beauty_mh_texiao_action_eye">mengedip</string>
+    <string name="beauty_mh_haha_waixingren">makhluk luar angkasa</string>
+    <string name="beauty_mh_haha_li">wajah buah pir</string>
+    <string name="beauty_mh_haha_shou">wajah kurus</string>
+    <string name="beauty_mh_haha_jingxiang">wajah gambar cermin</string>
+    <string name="beauty_mh_haha_pianduan">pecahan wajah</string>
+    <string name="beauty_mh_haha_daoying">refleksi air</string>
+    <string name="beauty_mh_haha_xuanzhuan">cermin spiral</string>
+    <string name="beauty_mh_haha_yuyan">kamera mata ikan</string>
+    <string name="beauty_mh_haha_zuoyou">spion kiri dan kanan</string>
+
+    <string name="beauty_mh_makeup_none">sosok asli</string>
+    <string name="beauty_mh_makeup_jiemao">bulu mata</string>
+    <string name="beauty_mh_makeup_chuncai">lip gloss</string>
+    <string name="beauty_mh_makeup_saihong">perona pipi</string>
+    <string name="beauty_mh_makeup_yanying">eyeshadow</string>
+    <string name="beauty_mh_makeup_yanxian">Eyeliner</string>
+
+    <string name="beauty_none"></string>
+
+    <string name="beauty_mh_texiao_action_head_tip">Tolong angkat kepala.</string>
+    <string name="beauty_mh_texiao_action_mouth_tip">Tolong buka mulut Anda.</string>
+    <string name="beauty_mh_texiao_action_eye_tip">tolong berkedip</string>
+
+    <string name="beauty_mh_texiao_action_downloading">Stiker sedang diunduh, harap tunggu.</string>
+
+
+</resources>

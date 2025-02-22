@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">ثلاث أوراق الحكمة والشجاعة</string>
+    <string name="game_zp">دوران الحظ</string>
+    <string name="game_choose_game">اختيار اللعبة</string>
+    <string name="game_wait_start">سوف تبدأ قريبًا، الرجاء الإنتظار...</string>
+    <string name="game_charge">شحن</string>
+    <string name="game_win">لقد ربحت!</string>
+    <string name="game_wait_end">الرجاء الإنتظار حتى تنتهي اللعبة</string>
+    <string name="game_wan">عشرة آلاف</string>
+    <string name="game_zjh_role_name_1">تاو تشياو x2</string>
+    <string name="game_zjh_role_name_2">تاو شان x2</string>
+    <string name="game_zjh_role_name_3">شياو تشياو x2</string>
+    <string name="game_start_support">ابدأ الدعم</string>
+    <string name="game_show_result">كشف النتيجة</string>
+    <string name="game_lose_tip">الفوز والهزيمة أمر طبيعي في حياة الجندي</string>
+</resources>

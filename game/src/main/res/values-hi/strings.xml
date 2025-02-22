@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">Tiga kartu kebijaksanaan dan keberanian</string>
+    <string name="game_zp">Roda peruntungan</string>
+    <string name="game_choose_game">Pilih permainan</string>
+    <string name="game_wait_start">Segera dimulai, harap tunggu...</string>
+    <string name="game_charge">isi ulang</string>
+    <string name="game_win">Won</string>
+    <string name="game_wait_end">Harap tunggu hingga permainan berakhir</string>
+    <string name="game_wan">Sepuluh ribu</string>
+    <string name="game_zjh_role_name_1">dewi kemenanganx2</string>
+    <string name="game_zjh_role_name_2">dewi kebijaksanaanx2</string>
+    <string name="game_zjh_role_name_3">dewi bebasx2</string>
+    <string name="game_start_support">Mulai mendukung</string>
+    <string name="game_show_result">Tampilkan hasilnya</string>
+    <string name="game_lose_tip">Kegagalan adalah ibu dari kesuksesan</string>
+</resources>
